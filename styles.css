@@ -1,2 +1,8 @@
 
 /* Your CSS Code here. */
+#newton-modal {
+      /* Center the modal vertically and horizontally */
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);

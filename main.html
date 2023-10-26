@@ -3,13 +3,48 @@
 <html>
 
 <head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	  <!-- Button to open the modal -->
+  <button id="open-modal">Open Modal</button>
+
+  <!-- Modal -->
+  <div id="newton-modal">
+    <!-- Modal Header -->
+    <div class="modal-header">
+      <h2>New Modal</h2>
+    </div>
+    
+    <!-- Modal Body -->
+    <div class="modal-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    
+    <!-- Modal Footer -->
+    <div class="modal-footer">
+      <button id="close-modal">Close</button>
+    </div>
+  </div>
+ 
     <script type="text/javascript" src="./script.js">
-</script>
+    const openModalButton = document.getElementById("open-modal");
+    const closeModalButton = document.getElementById("close-modal");
+    const modal = document.getElementById("newton-modal");
+
+    openModalButton.addEventListener("click", function() {
+      modal.style.display = "block";
+    });
+
+    closeModalButton.addEventListener("click", function() {
+      modal.style.display = "none";
+    });
+	</script>
+	
 
 </body>
 
